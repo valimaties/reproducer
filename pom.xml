@@ -124,14 +124,10 @@
                 </executions>
                 <configuration>
                     <mainClass>${mainClass}</mainClass>
-                    <arguments>
-                        <!-- Add your arguments here -->
-                    </arguments>
                     <systemProperties>
-                        <!-- Ensure that the module-path is correctly configured -->
                         <property>
                             <name>module.path</name>
-                            <value>D:/javafx-sdk-23.0.1/lib</value> <!-- Path to JavaFX SDK lib -->
+                            <value>D:/javafx-sdk-23.0.1/lib</value>
                         </property>
                     </systemProperties>
                 </configuration>
@@ -152,7 +148,6 @@
                 <version>0.0.8</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>com.test.reproducer/com.test.reproducer.HelloApplication</mainClass>
